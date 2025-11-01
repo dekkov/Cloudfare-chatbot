@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-chatbot",
+  "version": "1.0.0",
+  "description": "AI-powered portfolio chatbot built on Cloudflare Workers",
+  "main": "index.js",
+  "scripts": {
+    "ingest": "tsx scripts/ingest-resume.ts",
+    "dev": "cd worker && npm run dev",
+    "deploy": "cd worker && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekkov/Cloudfare-chatbot.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "chatbot",
+    "portfolio",
+    "rag"
+  ],
+  "author": "Hoang Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dekkov/Cloudfare-chatbot/issues"
+  },
+  "homepage": "https://github.com/dekkov/Cloudfare-chatbot#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251014.0",
+    "@types/node": "^24.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.45.3"
+  }
+}

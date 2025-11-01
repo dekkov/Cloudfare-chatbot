@@ -1,0 +1,109 @@
+{
+  "personal": {
+    "name": "Hoang Tran",
+    "location": "Seattle, WA",
+    "phone": "(206) 471-5987",
+    "email": "trhoang220703@gmail.com",
+    "linkedin": "linkedin.com/in/hoangtran1",
+    "github": "github.com/dekkov"
+  },
+  "education": {
+    "university": "Oregon State University",
+    "degree": "Bachelor of Computer Science",
+    "graduation": "March 2026",
+    "gpa": "3.67/4.0",
+    "honors": ["Honor Roll (2022-2024)"],
+    "coursework": [
+      "Computer Network",
+      "Data Structures and Algorithms",
+      "Operating Systems",
+      "Software Engineering"
+    ]
+  },
+  "workExperience": [
+    {
+      "id": "work_1",
+      "title": "Software Developer",
+      "company": "Oregon State University's Center for Applied Systems and Software",
+      "location": "Corvallis, OR",
+      "period": "Feb 2025 - Current",
+      "technologies": ["C#", ".NET", "Python", "Docker", "SQL"],
+      "achievements": [
+        "Engineered an ETL synchronization pipeline between Salesforce Cloud and on-prem databases",
+        "Reduced sync runtime by 70% by introducing parallel execution and optimizing query output to prevent race conditions",
+        "Processed 40,000+ student records daily with automated validation and scheduling system via Windows service",
+        "Automated the deployment of R workflows to AWS, GCP, and Azure serverless functions using GitHub Actions",
+        "Improved test coverage and execution speed by optimizing schema and output validation strategies for R packages"
+      ]
+    },
+    {
+      "id": "work_2",
+      "title": "Undergraduate Research Assistant",
+      "company": "Oregon State University's College of Engineering",
+      "location": "Corvallis, OR",
+      "period": "Jun 2024 - September 2024",
+      "technologies": ["Swift", "Python", "LLM integration"],
+      "achievements": [
+        "Built a full-stack iOS application with Swift and Python backend to deliver personalized daily article summaries",
+        "Implemented an NLP pipeline leveraging the GPT-4 API for automated key-content extraction and summary generation"
+      ]
+    },
+    {
+      "id": "work_3",
+      "title": "Undergraduate Teaching Assistant",
+      "company": "Oregon State University's College of Engineering",
+      "location": "Corvallis, OR",
+      "period": "Mar 2023 - Jun 2023",
+      "technologies": ["GitHub", "Agile"],
+      "achievements": [
+        "Guided a cohort of 10+ students in applying Agile development practices and GitHub workflows to improve collaboration, sprint planning, and project delivery",
+        "Evaluated and provided actionable feedback on software design and requirements documentation, enhancing students' understanding of real-world development processes"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "project_1",
+      "name": "Multiplayer Board Game Platform",
+      "period": "Dec 2024 - Current",
+      "technologies": ["Next.js", "Socket.io", "Redis", "TypeScript", "ASP.NET Core SignalR"],
+      "description": "Real-time multiplayer poker platform for 2-player concurrent sessions",
+      "achievements": [
+        "Delivered a real-time multiplayer poker platform for 2-player concurrent sessions with sub-100ms latency using Next.js, TypeScript, and ASP.NET Core SignalR",
+        "Optimized API response time by 60% with Redis caching and efficient game state management",
+        "Achieved stable server connection with robust room management, automatic cleanup, and comprehensive error handling for seamless multiplayer experience"
+      ]
+    },
+    {
+      "id": "project_2",
+      "name": "AI-Powered Business Strategy Tool",
+      "period": "Sep 2024 - June 2025",
+      "technologies": ["PostgreSQL", "LlamaIndex", "Vue.js", "pgvector"],
+      "description": "AI-driven automation SaaS business strategy platform",
+      "achievements": [
+        "Reduced manual data entry time by integrating AI-driven automation into a SaaS business strategy platform",
+        "Enabled semantic and context-aware queries by integrating LlamaIndex with PostgreSQL pgvector and a custom Index Manager, allowing AI agents to retrieve business insights with natural-language prompts",
+        "Enhanced user engagement by developing a cognitive memory system that uses LlamaIndex to cache past interactions and personalize AI responses based on user preferences"
+      ]
+    },
+    {
+      "id": "project_3",
+      "name": "Microblogging Platform",
+      "period": "Sep 2023 - Dec 2023",
+      "technologies": ["AWS Lambda", "API Gateway", "S3", "RDS", "DynamoDB", "ECS Fargate", "Flask", "React", "CloudFront"],
+      "description": "Full-stack social media application on AWS",
+      "achievements": [
+        "Deployed full-stack social media application on AWS using ECS Fargate for containerized Flask backend, S3/CloudFront for React frontend, and Application Load Balancer for traffic routing across production environment",
+        "Implemented DynamoDB with Global Secondary Index for real-time messaging, optimizing access patterns for conversation threads and message groups with single-table design"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["C#", "Python", "Swift", "JavaScript", "TypeScript", "SQL", "R", "C", "C++", "HTML", "CSS", "Linux Shell"],
+    "technologies": [".NET 8", "React", "Lambda", "S3", "API Gateway", "Docker", "GitHub Actions"],
+    "databases": {
+      "relational": ["MySQL", "PostgreSQL"],
+      "nosql": ["CosmosDB", "MongoDB"]
+    }
+  }
+}

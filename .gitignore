@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+worker/node_modules
+
+# Environment variables
+.env
+.dev.vars
+
+# Build outputs
+.wrangler
+worker/.wrangler
+dist
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Documentation (except README.md)
+*.md
+!README.md

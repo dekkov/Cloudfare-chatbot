@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Hoang Tran's Portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>💼 Hoang Tran - Portfolio Assistant</h1>
+                <p class="subtitle">Ask me anything about Hoang's experience, projects, and skills!</p>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages">
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>👋 Hi! I'm an AI assistant that can answer questions about Hoang Tran's portfolio. Feel free to ask about:</p>
+                        <ul>
+                            <li>Work experience and achievements</li>
+                            <li>Technical projects and implementations</li>
+                            <li>Programming skills and technologies</li>
+                            <li>Education and coursework</li>
+                            <li>Contact information</li>
+                        </ul>
+                        <p>What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea
+                        id="userInput"
+                        placeholder="Ask me about Hoang's experience, projects, or skills..."
+                        rows="1"
+                    ></textarea>
+                    <button id="sendButton" class="send-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 10L18 2L12 10L18 18L2 10Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <button id="clearButton" class="clear-button">Clear Conversation</button>
+                    <span class="status" id="status"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

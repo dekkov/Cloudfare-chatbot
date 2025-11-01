@@ -1,0 +1,50 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "portfolio-chatbot",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-11-01",
+	"compatibility_flags": [
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"directory": "./public"
+	},
+	"observability": {
+		"enabled": true
+	},
+	// Workers AI binding for LLM inference
+	"ai": {
+		"binding": "AI"
+	},
+	// Vectorize index for semantic search
+	"vectorize": [
+		{
+			"binding": "VECTORIZE",
+			"index_name": "portfolio-embeddings"
+		}
+	],
+	// Durable Objects for conversation memory
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "CHAT_SESSIONS",
+				"class_name": "ChatSession"
+			}
+		]
+	},
+	// Migrations for Durable Objects
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": ["ChatSession"]
+		}
+	]
+	// Uncomment to enable admin API key authentication:
+	// "vars": {
+	//   "ADMIN_API_KEY": "your-secret-key-here"
+	// }
+}
