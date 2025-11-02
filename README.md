@@ -2,6 +2,12 @@
 
 An AI-powered chatbot built on Cloudflare's edge platform that answers questions about your professional portfolio. The chatbot uses RAG (Retrieval Augmented Generation) to provide accurate, context-aware responses about your experience, projects, and skills.
 
+## 🎯 Live Demo
+
+**Try it now:** [https://dekkov.com](https://dekkov.com)
+
+Click the chat button (💬) in the bottom-right corner to interact with the AI-powered portfolio assistant!
+
 ## Features
 
 - 🤖 **AI-Powered Responses**: Uses Llama 3.3 70B via Cloudflare Workers AI

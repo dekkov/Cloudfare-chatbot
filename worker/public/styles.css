@@ -5,23 +5,24 @@
 }
 
 :root {
-    --primary-color: #4f46e5;
-    --primary-hover: #4338ca;
-    --background: #0f172a;
-    --surface: #1e293b;
-    --surface-light: #334155;
-    --text-primary: #f1f5f9;
-    --text-secondary: #94a3b8;
-    --border: #334155;
+    /* Modern gradient theme - Purple to Blue */
+    --primary-color: #8b5cf6;
+    --primary-hover: #7c3aed;
+    --background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --surface: rgba(255, 255, 255, 0.1);
+    --surface-light: rgba(255, 255, 255, 0.15);
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+    --border: rgba(255, 255, 255, 0.2);
     --success: #10b981;
     --error: #ef4444;
-    --user-message: #4f46e5;
-    --assistant-message: #1e293b;
+    --user-message: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --assistant-message: rgba(255, 255, 255, 0.15);
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: var(--background);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: var(--text-primary);
     line-height: 1.6;
     height: 100vh;
@@ -37,7 +38,8 @@ body {
 }
 
 .header {
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     padding: 1.5rem 2rem;
 }
@@ -114,15 +116,18 @@ body {
 }
 
 .user-message .message-content {
-    background: var(--user-message);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border-bottom-right-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .assistant-message .message-content {
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-bottom-left-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .message-content p {
@@ -143,7 +148,7 @@ body {
 }
 
 .message-content code {
-    background: var(--surface-light);
+    background: rgba(0, 0, 0, 0.2);
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-family: 'Courier New', monospace;
@@ -155,7 +160,8 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 1.25rem;
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-radius: 1rem;
     border-bottom-left-radius: 0.25rem;
@@ -188,7 +194,8 @@ body {
 }
 
 .input-container {
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-top: 1px solid var(--border);
     padding: 1.5rem 2rem;
 }
@@ -201,7 +208,8 @@ body {
 
 #userInput {
     flex: 1;
-    background: var(--background);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-radius: 0.75rem;
     padding: 0.875rem 1rem;
@@ -210,12 +218,13 @@ body {
     font-family: inherit;
     resize: none;
     max-height: 150px;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, background-color 0.2s;
 }
 
 #userInput:focus {
     outline: none;
     border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 #userInput::placeholder {
